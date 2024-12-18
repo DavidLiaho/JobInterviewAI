@@ -1,0 +1,11 @@
+<div class="qna">
+    <div *ngIf="loading">
+        <h3>Generating Questions..</h3>
+        <img src="images/spinner.gif" />
+    </div>
+
+    <div *ngFor="let qna of qnaArray, let i = index" class="question">
+        <p class="question" (click)="toggleAnswer(i)">Question {{i + 1}}: {{qna.question}}</p>
+        <p class="answer" *ngIf="visibility[i]">Answer {{i + 1}}: {{qna.answer}}</p>
+    </div>
+</div>

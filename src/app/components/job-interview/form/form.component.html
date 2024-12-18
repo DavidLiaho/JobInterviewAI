@@ -1,0 +1,20 @@
+<div>
+    <form (submit)="send()" ngNativeValidate>
+
+        <label>Job Interview Subject: </label>
+        <input type="text" name="subject" [(ngModel)]="jobInterview.subject" required />
+
+        <label>Job Interview Level: </label>
+        <select name="level" [(ngModel)]="jobInterview.level" required>
+            <option>Beginners</option>
+            <option>Intermediate</option>
+            <option>Expert</option>
+        </select>
+
+        <label>How Many Questions: </label>
+        <input type="number" name="totalQuestions" placeholder="Maximum: 10 Questions" required [(ngModel)]="jobInterview.totalQuestions" min="1" max="10" required />
+
+        <button>Generate</button>
+
+    </form>
+</div>

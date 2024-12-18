@@ -1,0 +1,11 @@
+<div>
+
+    <section>
+        <app-form (generate)="fetch($event)" />
+    </section>
+    
+    <section>
+        <app-qna [loading]="loading" [qnaArray]="qnaArray" />
+    </section>
+    
+</div>

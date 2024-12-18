@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, #7094ff 0%, #ffffff 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease;
+    padding: 0.5rem 1rem;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+
+h1:hover::before {
+    width: 100%;
+}
+
+/* Add a subtle text shadow for depth */
+h1:hover {
+    text-shadow: 
+        2px 2px 4px rgba(107, 17, 203, 0.3),
+        -2px -2px 4px rgba(37, 117, 252, 0.3);
+}

@@ -1,0 +1,21 @@
+div {
+    height: 100vh;
+}
+
+footer {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+a:hover {
+    font-size: large;
+}
